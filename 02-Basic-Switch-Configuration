@@ -1,0 +1,56 @@
+
+
+This lab focuses on the basic configuration of two Cisco switches connected to four PCs.
+
+The purpose of the lab is to practice essential Cisco IOS commands and basic LAN configuration.
+
+Topology
+
+PC1 ─── SW1 ───── SW2 ─── PC3
+PC2 ───┘          └────── PC4
+
+Devices
+
+- 2 × Cisco Switches
+- 4 × PCs
+
+Configuration Tasks
+
+The following basic configurations were performed on both switches:
+
+- Hostname
+- Enable secret
+- Console line password
+- VTY line password
+- VLAN 1 management IP address
+- Interface activation
+
+IP Addressing
+
+Device| IP Address| Subnet Mask
+SW1| 192.168.1.2| 255.255.255.0
+SW2| 192.168.1.3| 255.255.255.0
+PC1| 192.168.1.10| 255.255.255.0
+PC2| 192.168.1.11| 255.255.255.0
+PC3| 192.168.1.12| 255.255.255.0
+PC4| 192.168.1.13| 255.255.255.0
+
+Verification
+
+The following commands were used to verify the switch configuration:
+
+show running-config
+show ip interface brief
+
+Connectivity between the PCs was verified using:
+
+ping
+
+Skills Demonstrated
+
+- Basic Cisco IOS configuration
+- Switch hostname configuration
+- Console and VTY configuration
+- Management IP addressing
+- Basic LAN connectivity
+- Network verification and troubleshooting
